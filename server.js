@@ -19,10 +19,6 @@ app.use((req, res, next) => {
   next()
 })
 
-app.use((req, res, next) => {
-  res.render('maintenance.hbs')
-})
-
 hbs.registerPartials(__dirname + '/views/partials')
 
 hbs.registerHelper('getCurrentYear', () => {
